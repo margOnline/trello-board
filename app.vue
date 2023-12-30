@@ -1,5 +1,14 @@
 <template>
   <div class="bg-teal-600 p-10 h-[100vh] overflow-auto">
+    <h1 class="text-4xl text-white flex items-center mb-10">
+      <img
+        width="200"
+        class="mr-3"
+        src="https://vueschool.io/img/logo/vueschool_logo_multicolor_negative.svg"
+        alt="Vue School"
+      />
+      Trello Board
+    </h1>
     <TrelloBoard />
   </div>
 </template>
