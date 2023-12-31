@@ -18,6 +18,6 @@
   "dependencies": {
     "@vueuse/nuxt": "^10.7.1",
     "nanoid": "^5.0.4",
-    "vue3-draggable": "^2.0.9"
+    "vuedraggable": "^4.1.0"
   }
 }
