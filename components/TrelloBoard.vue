@@ -52,11 +52,16 @@ const columns = ref<Column[]>([
       v-model="columns"
       group="columns"
       item-key="id"
+      :transition="'150'"
+      handle=".drag-handle"
       class="flex gap-4 overflow-x-auto items-start"
     >
       <template v-slot:item="{item: column}:{item: Column}">
         <div class="bg-gray-200 rounded p-5 min-w-[250px]">
-          <header class="font-bold mb-4">{{ column.title }}</header>
+          <header class="font-bold mb-4">
+            <DragHandle />
+            {{ column.title }}
+          </header>
           <TrelloBoardTask v-for="task in column.tasks" :task="task" :key="task.id"/>
           <footer>
             <button class="text-gray-500">+ Add a card</button>
