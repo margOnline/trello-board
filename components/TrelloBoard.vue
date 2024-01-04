@@ -79,6 +79,11 @@ function createColumn(){
             <input
               class="title-input bg-transparent focus:bg-white rounded px-1 w-4/5"
               @keyup.enter="($event.target as HTMLInputElement).blur()"
+              @keydown.backspace="
+                column.title === ''
+                  ? (columns = columns.filter((c) => c.id !== column.id))
+                  : null
+              "
               type="text"
               v-model="column.title"
             />
