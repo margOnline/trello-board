@@ -1,6 +1,5 @@
-# Nuxt 3 Minimal Starter
-
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+# Trello Board
+A vue/nuxt project which implements some of the standard features of a trello board i.e. the ability to add, amend and delete columns and tasks. [vue.draggable.next](https://github.com/SortableJS/vue.draggable.next) is used to enable dragging and dropping of columns and tasks.
 
 ## Setup
 
@@ -15,9 +14,6 @@ pnpm install
 
 # yarn
 yarn install
-
-# bun
-bun install
 ```
 
 ## Development Server
@@ -33,9 +29,6 @@ pnpm run dev
 
 # yarn
 yarn dev
-
-# bun
-bun run dev
 ```
 
 ## Production
@@ -67,9 +60,6 @@ pnpm run preview
 
 # yarn
 yarn preview
-
-# bun
-bun run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
