@@ -58,7 +58,7 @@ const alt = useKeyModifier("Alt");
       class="flex gap-4 overflow-x-auto items-start"
     >
       <template #item="{element: column}:{element: Column}">
-        <div class="bg-gray-200 rounded p-5 min-w-[250px]">
+        <div class="column bg-gray-200 rounded p-5 min-w-[250px]">
           <header class="font-bold mb-4">
             <DragHandle />
             {{ column.title }}
@@ -72,7 +72,7 @@ const alt = useKeyModifier("Alt");
           >
             <template #item="{element: task} : {element: Task}">
               <div>
-                <TrelloBoardTask :task="task"/>
+                <TrelloBoardTask :task="task" @delete="column.tasks = column.tasks.filter((t) => t.id != $event)"/>
               </div>
             </template>
           </draggable>
